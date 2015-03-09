@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dwr>
+  <!--   <allow>
+        <create creator="new" javascript="LogHtmlWebServer">
+            <param name="class" value="com.shenji.common.log.LogHtmlWebServer"/>
+        </create>
+    </allow> -->
+</dwr>

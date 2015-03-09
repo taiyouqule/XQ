@@ -1,0 +1,36 @@
+@CHARSET "UTF-8";
+/**
+全局属性
+**/
+body{0px;margin: 0px;padding:0px;text-align: center;width:960px;height:auto;}
+
+/**
+*注册信息
+*/
+.main{width:957px;height:1000px;border: 1px solid #54ADE7;border-top-width: 6px;position:absolute;top:160px;}
+.main_1{width:957px;height: 84px;margin-top: 30px;}
+.main_1 p{margin:0px;width:200px;height: 28px;background: url("../images/kg_lgn_splice.png") no-repeat -200px 0px;position:absolute;left:400;top:30px;}
+.main_2{widows: 957px;height: 485px;border-radius: 0 0 5px 5px;}
+.main_2_1{width: 800px;height: 470px;position:absolute;left:80px;top:100px;text-align: center;}
+.main_2_1_1{width:300px;}
+.main_2_1_1 label{float: right;color: black;font-size: 13px;}
+.main_2_1_2{width:553px;}
+.main_2_1_2_1{float:left;width: 290px;height: 39px;font-size: 15px;background:#F0EEF0;border:1px solid #999999;}
+.main_2_1_2_1 input{width: 290px;height: 39px;border: 0px;background:#F0EEF0;outline:none;line-height: 39px; }
+.main_2_2_1{margin-left: 330px;}
+.main_2_2_1 input{width:135px;height: 40px;cursor:pointer;background: url("../images/kg_lgn_splice.png") no-repeat 0px -200px;border: 0px;}
+.main_2_2_2{font-size: 12px;height: 40px;}
+.main_2_2_2 a{color: #66B3FF;text-decoration: none;}
+.main_2_2_2_1{float: left;position:absolute;left:275;top:365px;}
+.main_2_2_2_2{width:150px;height:20px;position:absolute;left:565;top:369px;}
+.code3{background: url("../images/splice1.png") no-repeat 0px -5px;color: red;padding-left:15px;margin-left: 10px;float:left;margin-top:0px;}
+.main_2_2_3{width: 135px;height: 40px;background:#F0EEF0;border:1px solid #999999;float: left;}
+.main_2_2_3 input{width: 135px;height: 39px;border: 0px;background:#F0EEF0;outline:none; line-height: 36px;}
+.code{float:left;width:80px;height:40px;line-height:40px;font-family:Arial;font-style:italic;color:Red;border:0px;padding:2px 3px;letter-spacing:3px;font-weight:bolder;}
+.main_2_1_2 a{display:inline-block;text-decoration: none;color: #7B7B7B;font-size: 12px;}
+.main_2_1_2 a:hover{color: #41BBEC;}
+.main_2_3_1{width: 230px;height: 40px;float: left;color:#C3C9CA;font-size: 12px;line-height: 40px; }
+.main_2_3_4{width: 74px;height:20px;margin-top:20px;margin-left: 0px;float:left;}
+.main_2_3_4 a{cursor:  pointer;}
+.code1{background: url("../images/splice1.png") no-repeat 0px 7px;color: red;padding-left:15px;margin-left: 10px;float:left;margin-top:0px;}
+.code2{background: url("../images/splice.png") no-repeat 0px 9px;color: #00C632;padding-left:15px;margin-left: 10px;float:left;margin-top:0px;}

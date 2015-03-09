@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="XQRobot">
+        <wb-resource deploy-path="/" source-path="/WebRoot"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src.onto"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src.nlp"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src.search"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src.web"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src.webservices"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src.fdnlp"/>
+        <property name="context-root" value="/XQRobot"/>
+        <property name="java-output-path" value="/XQRobot/WebRoot/WEB-INF/classes"/>
+    </wb-module>
+</project-modules>

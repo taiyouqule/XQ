@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<serviceGroup>
+<service name="CommonServer" >
+	<description>
+		Please Type your service description here
+	</description>
+	<messageReceivers>
+		<messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-only" class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver" />
+		<messageReceiver  mep="http://www.w3.org/2004/08/wsdl/in-out"  class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</messageReceivers>
+	<parameter name="ServiceClass">com.shenji.webservices.port.CommonServer</parameter>
+</service>
+
+<service name="OntoEdit" >
+	<description>
+		Please Type your service description here
+	</description>
+	<messageReceivers>
+		<messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-only" class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver" />
+		<messageReceiver  mep="http://www.w3.org/2004/08/wsdl/in-out"  class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</messageReceivers>
+	<parameter name="ServiceClass">com.shenji.webservices.port.OntoEdit</parameter>
+</service>
+
+<service name="Search" >
+	<description>
+		Please Type your service description here
+	</description>
+	<messageReceivers>
+		<messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-only" class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver" />
+		<messageReceiver  mep="http://www.w3.org/2004/08/wsdl/in-out"  class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</messageReceivers>
+	<parameter name="ServiceClass">com.shenji.webservices.port.Search</parameter>
+</service>
+
+<service name="OntoMapping" >
+	<description>
+		Please Type your service description here
+	</description>
+	<messageReceivers>
+		<messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-only" class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver" />
+		<messageReceiver  mep="http://www.w3.org/2004/08/wsdl/in-out"  class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</messageReceivers>
+	<parameter name="ServiceClass">com.shenji.webservices.port.OntoMapping</parameter>
+</service>
+
+
+<service name="OntoReasoning" >
+	<description>
+		Please Type your service description here
+	</description>
+	<messageReceivers>
+		<messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-only" class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver" />
+		<messageReceiver  mep="http://www.w3.org/2004/08/wsdl/in-out"  class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+	</messageReceivers>
+	<parameter name="ServiceClass">com.shenji.webservices.port.OntoReasoning</parameter>
+</service>
+</serviceGroup>

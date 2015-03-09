@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<display-name></display-name>
+
+	<!-- Axis2 Servlet配置 -->
+	<servlet>
+		<servlet-name>AxisServlet</servlet-name>
+		<servlet-class>org.apache.axis2.transport.http.AxisServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>AxisAdminServlet</servlet-name>
+		<servlet-class>org.apache.axis2.webapp.AxisAdminServlet</servlet-class>
+	</servlet>
+
+	<!-- 搜索 Servlet配置 -->
+	<servlet>
+		<servlet-name>SearchServlet</servlet-name>
+		<servlet-class>com.shenji.web.servlet.SearchServlet</servlet-class>
+	</servlet>
+
+
+	<!-- 搜索 Servlet配置 -->
+	<servlet>
+		<servlet-name>SearchServlet2</servlet-name>
+		<servlet-class>com.shenji.web.servlet.SearchServlet2</servlet-class>
+	</servlet>
+
+	<!-- 搜索 Servlet配置 -->
+	<servlet>
+		<servlet-name>TomcatApplicationServlet</servlet-name>
+		<servlet-class>com.shenji.common.action.TomcatApplicationServlet</servlet-class>
+		<load-on-startup>5</load-on-startup>
+	</servlet>
+
+	<!-- dwr t配置 -->
+	<servlet>
+		<servlet-name>dwr-test</servlet-name>
+		<servlet-class>uk.ltd.getahead.dwr.DWRServlet</servlet-class>
+		<init-param>
+			<param-name>debug</param-name>
+			<param-value>false</param-value>
+		</init-param>
+		<init-param>
+			<param-name>scriptCompressed</param-name>
+			<param-value>false</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SearchJsonServlet</servlet-name>
+    <servlet-class>com.shenji.web.servlet.SearchJsonServlet</servlet-class>
+  </servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>TomcatApplicationServlet</servlet-name>
+		<url-pattern>/TomcatApplicationServlet</url-pattern>
+	</servlet-mapping>
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>AxisServlet</servlet-name>
+		<url-pattern>/servlet/AxisServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AxisServlet</servlet-name>
+		<url-pattern>*.jws</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AxisServlet</servlet-name>
+		<url-pattern>/services/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AxisAdminServlet</servlet-name>
+		<url-pattern>/axis2-admin/*</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet-mapping>
+		<servlet-name>SearchServlet</servlet-name>
+		<url-pattern>/SearchServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>SearchServlet2</servlet-name>
+		<url-pattern>/SearchServlet2</url-pattern>
+	</servlet-mapping>
+
+	<mime-mapping>
+		<extension>inc</extension>
+		<mime-type>text/plain</mime-type>
+	</mime-mapping>
+
+	<servlet-mapping>
+		<servlet-name>dwr-test</servlet-name>
+		<url-pattern>/dwr/*</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchJsonServlet</servlet-name>
+    <url-pattern>/SearchJsonServlet</url-pattern>
+  </servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>search2.jsp</welcome-file>
+		<welcome-file>/axis2-web/index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!-- Axis2 Servlet配置结束 -->
+</web-app>
